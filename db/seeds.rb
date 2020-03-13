@@ -38,79 +38,79 @@ user20 = User.create(email: "person20@person.com", password: "123456", first_nam
 
 
 item1 = user1.items.create(name: "grizzly adams", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item1.picture.attach(io: File.open('public/assets/items/item1.jpg'), filename: 'item1.jpg')
+item1.picture.attach(io: File.open('app/assets/images/items/item1.jpg'), filename: 'item1.jpg')
 
 item2 = user2.items.create(name: "scruffle", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item2.picture.attach(io: File.open('public/assets/items/item2.jpg'), filename: 'item2.jpg')
+item2.picture.attach(io: File.open('app/assets/images/items/item2.jpg'), filename: 'item2.jpg')
 
 item3 = user3.items.create(name: "techno viking", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item3.picture.attach(io: File.open('public/assets/items/item3.jpg'), filename: 'item3.jpg')
+item3.picture.attach(io: File.open('app/assets/images/items/item3.jpg'), filename: 'item3.jpg')
 
 item4 = user4.items.create(name: "wookie", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item4.picture.attach(io: File.open('public/assets/items/item4.jpg'), filename: 'item4.jpg')
+item4.picture.attach(io: File.open('app/assets/images/items/item4.jpg'), filename: 'item4.jpg')
 
 item5 = user5.items.create(name: "kimbo", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item5.picture.attach(io: File.open('public/assets/items/item5.jpg'), filename: 'item5.jpg')
+item5.picture.attach(io: File.open('app/assets/images/items/item5.jpg'), filename: 'item5.jpg')
 
 item6 = user6.items.create(name: "willie tacker", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item6.picture.attach(io: File.open('public/assets/items/item6.jpg'), filename: 'item6.jpg')
+item6.picture.attach(io: File.open('app/assets/images/items/item6.jpg'), filename: 'item6.jpg')
 
 item7 = user7.items.create(name: "velvet melvin", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item7.picture.attach(io: File.open('public/assets/items/item7.jpg'), filename: 'item7.jpg')
+item7.picture.attach(io: File.open('app/assets/images/items/item7.jpg'), filename: 'item7.jpg')
 
 item8 = user8.items.create(name: "dirty osama", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item8.picture.attach(io: File.open('public/assets/items/item8.jpg'), filename: 'item8.jpg')
+item8.picture.attach(io: File.open('app/assets/images/items/item8.jpg'), filename: 'item8.jpg')
 
 item9 = user9.items.create(name: "face fungus", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item9.picture.attach(io: File.open('public/assets/items/item9.jpg'), filename: 'item9.jpg')
+item9.picture.attach(io: File.open('app/assets/images/items/item9.jpg'), filename: 'item9.jpg')
 
 item10 = user10.items.create(name: "thigh tickler", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item10.picture.attach(io: File.open('public/assets/items/item10.jpg'), filename: 'item10.jpg')
+item10.picture.attach(io: File.open('app/assets/images/items/item10.jpg'), filename: 'item10.jpg')
 
 item11 = user11.items.create(name: "goatface", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item11.picture.attach(io: File.open('public/assets/items/item11.jpg'), filename: 'item11.jpg')
+item11.picture.attach(io: File.open('app/assets/images/items/item11.jpg'), filename: 'item11.jpg')
 
 item12 = user12.items.create(name: "love santa", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item12.picture.attach(io: File.open('public/assets/items/item12.jpg'), filename: 'item12.jpg')
+item12.picture.attach(io: File.open('app/assets/images/items/item12.jpg'), filename: 'item12.jpg')
 
 item13 = user13.items.create(name: "gunter", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item13.picture.attach(io: File.open('public/assets/items/item13.jpg'), filename: 'item13.jpg')
+item13.picture.attach(io: File.open('app/assets/images/items/item13.jpg'), filename: 'item13.jpg')
 
 item14 = user14.items.create(name: "chinchocha", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item14.picture.attach(io: File.open('public/assets/items/item14.jpg'), filename: 'item14.jpg')
+item14.picture.attach(io: File.open('app/assets/images/items/item14.jpg'), filename: 'item14.jpg')
 
 item15 = user15.items.create(name: "bearditude", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item15.picture.attach(io: File.open('public/assets/items/item15.jpg'), filename: 'item15.jpg')
+item15.picture.attach(io: File.open('app/assets/images/items/item15.jpg'), filename: 'item15.jpg')
 
 item16 = user16.items.create(name: "facefro", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item16.picture.attach(io: File.open('public/assets/items/item16.jpg'), filename: 'item16.jpg')
+item16.picture.attach(io: File.open('app/assets/images/items/item16.jpg'), filename: 'item16.jpg')
 
 item17 = user17.items.create(name: "chinitals", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item17.picture.attach(io: File.open('public/assets/items/item17.jpg'), filename: 'item17.jpg')
+item17.picture.attach(io: File.open('app/assets/images/items/item17.jpg'), filename: 'item17.jpg')
 
 item18 = user18.items.create(name: "the instant hagrid", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item18.picture.attach(io: File.open('public/assets/items/item18.jpg'), filename: 'item18.jpg')
+item18.picture.attach(io: File.open('app/assets/images/items/item18.jpg'), filename: 'item18.jpg')
 
 item19 = user19.items.create(name: "grizhole", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item19.picture.attach(io: File.open('public/assets/items/item19.jpg'), filename: 'item19.jpg')
+item19.picture.attach(io: File.open('app/assets/images/items/item19.jpg'), filename: 'item19.jpg')
 
 item20 = user20.items.create(name: "beardmo", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item20.picture.attach(io: File.open('public/assets/items/item20.jpg'), filename: 'item20.jpg')
+item20.picture.attach(io: File.open('app/assets/images/items/item20.jpg'), filename: 'item20.jpg')
 
 item21 = user20.items.create(name: "gruffbucking", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item21.picture.attach(io: File.open('public/assets/items/item21.jpg'), filename: 'item21.jpg')
+item21.picture.attach(io: File.open('app/assets/images/items/item21.jpg'), filename: 'item21.jpg')
 
 item22 = user20.items.create(name: "beardfella", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item22.picture.attach(io: File.open('public/assets/items/item22.jpg'), filename: 'item22.jpg')
+item22.picture.attach(io: File.open('app/assets/images/items/item22.jpg'), filename: 'item22.jpg')
 
 item23 = user20.items.create(name: "face farmer", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item23.picture.attach(io: File.open('public/assets/items/item23.jpg'), filename: 'item23.jpg')
+item23.picture.attach(io: File.open('app/assets/images/items/item23.jpg'), filename: 'item23.jpg')
 
 item24 = user20.items.create(name: "facewig", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item24.picture.attach(io: File.open('public/assets/items/item24.jpg'), filename: 'item24.jpg')
+item24.picture.attach(io: File.open('app/assets/images/items/item24.jpg'), filename: 'item24.jpg')
 
 item25 = user20.items.create(name: "chuck norris", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item25.picture.attach(io: File.open('public/assets/items/item25.jpg'), filename: 'item25.jpg')
+item25.picture.attach(io: File.open('app/assets/images/items/item25.jpg'), filename: 'item25.jpg')
 
 
 
