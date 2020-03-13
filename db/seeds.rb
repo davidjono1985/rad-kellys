@@ -118,4 +118,4 @@ item25.picture.attach(io: File.open('app/assets/images/items/item25.jpg'), filen
 
 
 
-puts "Seed complete!"
+puts "Seed completed!"
