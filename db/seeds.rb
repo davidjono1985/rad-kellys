@@ -13,8 +13,8 @@ Order.destroy_all
 Item.destroy_all
 User.destroy_all
 
-
-user1 = User.create(email: "person1@person.com", password: "123456", first_name: "Person1", last_name: "Surname", address: "1 Street", phone: "1111111111")
+#filename: '/app/assets/images/items/item1.jpg',
+user1 = User.create( email: "person1@person.com", password: "123456", first_name: "Person1", last_name: "Surname", address: "1 Street", phone: "1111111111")
 user2 = User.create(email: "person2@person.com", password: "123456", first_name: "Person2", last_name: "One", address: "1 Street", phone: "1111111111")
 user3 = User.create(email: "person3@person.com", password: "123456", first_name: "Person3", last_name: "Surname", address: "1 Street", phone: "1111111111")
 user4 = User.create(email: "person4@person.com", password: "123456", first_name: "Person4", last_name: "Surname", address: "1 Street", phone: "1111111111")
