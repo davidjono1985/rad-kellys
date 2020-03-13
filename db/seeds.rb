@@ -15,7 +15,7 @@ User.destroy_all
 
 #Initial seed data worked on localhost but did not work when deployed to Heroko
 
-# user1 = User.create( email: "person1@person.com", password: "123456", first_name: "Person1", last_name: "Surname", address: "1 Street", phone: "1111111111")
+user1 = User.create( email: "person1@person.com", password: "123456", first_name: "Person1", last_name: "Surname", address: "1 Street", phone: "1111111111")
 # user2 = User.create(email: "person2@person.com", password: "123456", first_name: "Person2", last_name: "One", address: "1 Street", phone: "1111111111")
 # user3 = User.create(email: "person3@person.com", password: "123456", first_name: "Person3", last_name: "Surname", address: "1 Street", phone: "1111111111")
 # user4 = User.create(email: "person4@person.com", password: "123456", first_name: "Person4", last_name: "Surname", address: "1 Street", phone: "1111111111")
@@ -38,7 +38,7 @@ User.destroy_all
 
 
 
-# item1 = user1.items.create(name: "grizzly adams", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
+item1 = user1.items.create(name: "grizzly adams", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
 # item1.picture.attach(io: File.open('app/assets/images/items/item1.jpg'), filename: 'item1.jpg', content_type: 'image/jpg')
 
 # item2 = user2.items.create(name: "scruffle", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
