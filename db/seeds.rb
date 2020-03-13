@@ -38,13 +38,13 @@ user20 = User.create(email: "person20@person.com", password: "123456", first_nam
 
 
 item1 = user1.items.create(name: "grizzly adams", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item1.picture.attach(io: File.open('app/assets/images/items/item1.jpg'), filename: 'item1.jpg')
+item1.picture.attach(io: File.open('/app/assets/images/items/item1.jpg'), filename: 'item1.jpg')
 
 item2 = user2.items.create(name: "scruffle", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item2.picture.attach(io: File.open('app/assets/images/items/item2.jpg'), filename: 'item2.jpg')
+item2.picture.attach(io: File.open('/app/assets/images/items'), filename: 'item2.jpg')
 
 item3 = user3.items.create(name: "techno viking", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
-item3.picture.attach(io: File.open('app/assets/images/items/item3.jpg'), filename: 'item3.jpg')
+item3.picture.attach(io: File.open('app/assets/images/items'), filename: 'item3.jpg')
 
 item4 = user4.items.create(name: "wookie", category:"Fu-Manchu", colour:"light-brown", texture:"grizzly", days_to_cultivate:126, price:169.99, sold:false)
 item4.picture.attach(io: File.open('app/assets/images/items/item4.jpg'), filename: 'item4.jpg')
