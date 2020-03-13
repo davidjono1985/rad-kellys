@@ -1,0 +1,34 @@
+
+<h2>DASHBOARD</h2>
+
+<h4>MY BEARDS CURRENTLY FOR SALE</h4>
+<%# loops through and displays all beards currently for sale%>
+
+        <div class ="row-flex">
+  <% if @items.length > 0 %>
+            <% @items.each do | item | %>
+       <div class="item-div">
+            <tr>
+                <P><%= "#{item.name} #{item.category} " %></P>
+
+
+                <td><%= link_to image_tag item.picture, class: 'img-thumbnail box', width: 120 if item.picture.attached? %></td>
+         
+                <p><%= link_to "details", item_path(item.id)%></p>
+               <p><%= link_to "edit", edit_item_path(item.id)%></p>
+               <p><%= link_to "delete", item, method: :delete, 
+              data:{confirm: "Are you sure you want to delete #{item.name}"} %></p>
+            </tr>
+            </div>            
+        <% end %>
+    <%else%>
+<p>You currently have no beards for sale - perhaps its time for a chop to get some dosh!</p>
+<%end%>
+
+       <%#button to upload/sell new beard%>
+    </div>
+        <div id ="button">
+        <a href="/items/new" class="btn btn-dark" role="button">SELL A NEW BEARD!</a>
+        </div>
+     
+

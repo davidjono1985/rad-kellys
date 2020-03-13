@@ -1,0 +1,42 @@
+
+<td><%= image_tag @items.picture, class: 'img-thumbnail box', width: 200 if @items.picture.attached? %></td>
+
+<h2><%= "#{@items.name} #{@items.price}"%></h2>
+<% if user_signed_in?%>
+    <%if @can_add %>
+        <p><%= link_to "Add to my wish list", add_item_to_list_path(@items)%> </p>
+    <% else %>
+            <% if current_user.id -= @items.user.id %>
+            You own this item
+    <% else %>
+        <p><%= link_to 'Remove from my wish list', remove_item_from_list_path(@items)%> </p>
+<% end %>
+    <% end %>
+   <% end %>
+
+<p>Name: <%= @items.user.email%></p>
+<p>Email: <%= @items.category%></p>
+
+
+<%# Checks if user is signed in, AND item has a price allocated, 
+AND the item doesn't belong to the user, AND the item has not been sold,
+if so, shows link to buy item %>
+
+<% if user_signed_in?%>
+    <% if @items.price %>
+    <p>
+        <%= number_to_currency @items.price %>
+            <% if current_user.id != @items.user.id %>
+                <% if @items.sold == false %>
+                   <%= link_to "Buy Now", new_order_path(item_id: @items.id), class: "btn btn-dark"%>
+                <%end%>
+            <%end%>
+    </p>
+<% end %>
+<% end %>
+<% if !user_signed_in?%>
+<h2>SIGN IN TO PURCHASE THIS ITEM!</h2>
+<% end %>
+
+<%= link_to 'Back', :back %>
+

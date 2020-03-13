@@ -1,0 +1,21 @@
+<h1>My Wishlist</h1>
+
+    <% @wishlists.each do |wishlist|%>
+    <% item = Item.find(wishlist.item_id)%>
+    <p><%= link_to item.name, item_path(item) %> </p>
+  <td><%= image_tag item.picture, class: 'img-thumbnail box', width: 200 if item.picture.attached? %></td>
+  
+    
+
+<%end%>
+
+<h1>Previous Orders</h1>
+
+    <% @orders.each do |order|%>
+    <% item = Item.find(order.item_id)%>
+    <p><%= link_to item.name, item_path(item) %> </p>
+    <td><%= image_tag item.picture, class: 'img-thumbnail box', width: 200 if item.picture.attached? %></td>
+  
+    <%= link_to "Search for more beards to buy!!", all_items_path()%>
+
+<%end%>

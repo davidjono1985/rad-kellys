@@ -1,0 +1,12 @@
+<h2><%=link_to 'About', about_path%></h2> 
+
+<% if user_signed_in? %>
+
+<h2><%=link_to 'SELL A BEARD', items_path%></h2>
+
+<h2><%=link_to 'BUY A BEARD', all_items_path%></h2>
+<%else%>
+
+<h2><%=link_to 'BY A BEARD', all_items_path%></h2>
+
+<%end%>
